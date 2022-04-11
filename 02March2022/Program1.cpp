@@ -1,32 +1,27 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int high(int i,int j)
+int main()
 {
-if(i<j)
-{
-    cout<<j<<" is the maximum among "<<i<<"and"<<j;
-}
-else if (i==j)
-{
-    cout<<i<<" and "<<j<<"are equal";
-}
+    int i, j;
+    cout << "Enter the first number : " << endl;
+    cin >> i;
+    cout << "Enter the second number : " << endl;
+    cin >> j;
 
-else
-{
- cout<<i<<" is the maximum among "<<i<<" and "<<j;
-}
-return(i,j);
-}
+    if (i < j)
+    {
+        cout << j << " is the maximum among " << i << " and " << j;
+    }
+    else if (i == j)
+    {
+        cout << i << " and " << j << "are equal";
+    }
 
-int main( )
-{
-    int a, b;
-    cout<<"Enter the first number : "<<endl;
-    cin>>a;
-    cout<<"Enter the second number : "<<endl;
-    cin>>b;
-    cout<<endl<<high(a,b);
+    else
+    {
+        cout << i << " is the maximum among " << i << " and " << j;
+    }
 
     return 0;
 }

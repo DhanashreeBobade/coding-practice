@@ -5,7 +5,7 @@ int main()
     int a, b, c, d, e, total;
     float Percentage;
     cout << "Enter the Total : ";
-    cin>>total;
+    cin >> total;
     cout << "Physics : ";
     cin >> a;
     cout << "Chemistry : ";
@@ -17,8 +17,8 @@ int main()
     cout << "Computer : ";
     cin >> e;
 
-int sum = a+b+c+d+e;
-    Percentage = (sum*100)/ total ;
+    int sum = a + b + c + d + e;
+    Percentage = (sum * 100) / total;
 
     if (Percentage >= 90)
     {
