@@ -2,35 +2,32 @@
 using namespace std;
 int main()
 {
-    int i, j, n, k = 1;
+    int i, n, sum = 0;
 
-    for (i = 0; i < 4; i++)
+    cout << " Write a Program that prints series of perfect numbers up to the entered limiting number." << endl;
+    cout << "Enter the number : ";
+    cin >> n;
+    cout << "1";
+
+    for (int j = 2; j <= n; j++)
     {
-        for (j = 0; j <= 4; j++)
+
+        for (i = 1; i < j; i++)
         {
-            n = 4 - i;
-            if (j < n)
+            if (j % i == 0)
             {
-                cout << "  ";
+                // cout << i << endl;
+                sum = sum + i;
             }
-
-            else if (j == n)
-            {
-                cout << " = ";
-            }
-
-            else
-            {
-                cout << k << " ";
-                ++k;
-            }
-
-            
         }
-        k = 1;
-        --n;
-        cout << endl;
-    }
 
+        if (sum != j)
+        {
+            cout << ", ";
+            cout << j;
+        }
+
+        sum = 0;
+    }
     return 0;
 }
